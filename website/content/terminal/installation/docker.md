@@ -219,14 +219,14 @@ Execute these commands:
 curl -o docker-compose.yaml https://raw.githubusercontent.com/OpenBB-finance/OpenBBTerminal/main/build/docker/docker-compose.yaml
 curl -o docker-compose.x11.yaml https://raw.githubusercontent.com/OpenBB-finance/OpenBBTerminal/main/build/docker/docker-compose.x11.yaml
 
-docker compose -f docker-compose.yaml -f docker-compose.x11.yaml run openbb
+docker-compose -f docker-compose.yaml -f docker-compose.x11.yaml run openbb
 ```
 
 :::note
 If you are experiencing issues with charts - launch the container with the following command:
 
 ```console
-docker compose -f docker-compose.yaml -f docker-compose.x11.yaml run -e WEBKIT_DISABLE_COMPOSITING_MODE=1 openbb
+docker-compose -f docker-compose.yaml -f docker-compose.x11.yaml run -e WEBKIT_DISABLE_COMPOSITING_MODE=1 openbb
 ```
 
 :::
